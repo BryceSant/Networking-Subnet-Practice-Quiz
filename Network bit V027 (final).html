@@ -1,0 +1,1399 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Networking Subnet Practice</title>
+    </head>
+	
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200;400&display=swap" rel="stylesheet">
+    
+        <style>
+            
+        .button
+        {
+          background-color: #678a8f; /* Green */
+          border: none;
+          color: black;
+          padding: 10px;
+          text-align: center;
+          font-size: 13px;
+          margin: 2px;
+          cursor: pointer;
+          border-radius: 8px;
+          border: 3px solid     #4a6366;
+          transition-duration: 0.3s;
+          
+        }
+        
+        .button:hover
+        {
+            background-color: #8faaae; /* Green */
+            color: white;
+        }
+		
+		#Ip
+		{
+        border-radius:         25px;
+        border: 3px solid     #59777a;
+        padding:             5px;
+        height:             20px;
+        max-width:          250px;
+        text-align:          center;
+        background-color:   white;
+        margin:             auto;
+        font-family:         'Roboto Mono', monospace;
+        
+		}
+		
+        #TotalMark
+        {
+        border-radius:         25px;
+        border: 3px solid     #59777a;
+        padding:             5px;
+        height:             20px;
+        max-width:          250px;
+        text-align:          center;
+        background-color:   white;
+        margin:             auto;
+        font-family:         'Roboto Mono', monospace;
+        }
+        
+		#BitAmount
+        {
+
+        font-family:         'Roboto Mono', monospace;
+        }
+		
+		#SubNumIPWire
+		{
+        border-radius:         25px;
+        border: 3px solid     #59777a;
+        padding:             5px;
+        height:             20px;
+        max-width:          300px;
+        text-align:          center;
+        background-color:   white;
+        margin: auto;
+        font-family:         'Roboto Mono', monospace;
+		}
+        
+        
+        
+        
+        #ClassTypeQuest
+        {
+        border-radius:        25px;
+        border: 3px solid     #4a6366;
+        padding:              5px;
+        height:               10px;
+        text-align:          center;
+        font-family:         'Roboto Mono', monospace;
+        }
+        
+        #DefaultSmQuest
+        {
+        border-radius:        25px;
+        border: 3px solid     #4a6366;
+        padding:              5px;
+        height:               10px;
+        text-align:          center;
+        font-family:         'Roboto Mono', monospace;
+        }
+        
+        #WireQuest
+        {
+        border-radius:        25px;
+        border: 3px solid     #4a6366;
+        padding:              5px;
+        height:               10px;
+        text-align:          center;
+        font-family:         'Roboto Mono', monospace;
+        }
+        
+        #BroadQuest
+        {
+        border-radius:        25px;
+        border: 3px solid     #4a6366;
+        padding:              5px;
+        height:               10px;
+        text-align:          center;
+        font-family:         'Roboto Mono', monospace;
+        }
+        
+        
+        #ClassTypeAns
+        {
+            padding:              4px;
+            height:               17px;
+            max-width:          300px;
+            text-align:          center;
+            font-family:         'Roboto Mono', monospace;
+            margin:             auto;
+            font-size: 13px;
+            
+        }
+        
+        #DefaultSmAns
+        {
+            padding:              4px;
+            height:               17px;
+            max-width:          300px;
+            text-align:          center;
+            font-family:         'Roboto Mono', monospace;
+            margin:             auto;
+            font-size: 13px;
+        }
+        
+        #WireAns
+        {
+            padding:              4px;
+            height:               17px;
+            max-width:          300px;
+            text-align:          center;
+            font-family:         'Roboto Mono', monospace;
+            margin:             auto;
+            font-size: 13px;
+        }
+        
+        #BroadAns
+        {
+            padding:              4px;
+            height:               17px;
+            max-width:          300px;
+            text-align:          center;
+            font-family:         'Roboto Mono', monospace;
+            margin:             auto;
+            font-size: 13px;
+        }
+        
+        
+        
+        
+        
+        
+        #NewSmQuest
+        {
+        border-radius:        25px;
+        border: 3px solid     #4a6366;
+        padding:              5px;
+        height:               10px;
+        text-align:          center;
+        font-family:         'Roboto Mono', monospace;
+        }
+        
+        #NewWireQuest
+        {
+        border-radius:        25px;
+        border: 3px solid     #4a6366;
+        padding:              5px;
+        height:               10px;
+        text-align:          center;
+        font-family:         'Roboto Mono', monospace;
+        }
+        
+        #NewBroadQuest
+        {
+        border-radius:        25px;
+        border: 3px solid     #4a6366;
+        padding:              5px;
+        height:               10px;
+        text-align:          center;
+        font-family:         'Roboto Mono', monospace;
+        }
+        
+        #HostRangeWA
+        {
+        border-radius:        25px;
+        border: 3px solid     #4a6366;
+        padding:              5px;
+        height:               10px;
+        text-align:          center;
+        font-family:         'Roboto Mono', monospace;
+        }
+        
+        #HostRangeBA
+        {
+        border-radius:        25px;
+        border: 3px solid     #4a6366;
+        padding:              5px;
+        height:               10px;
+        text-align:          center;
+        font-family:         'Roboto Mono', monospace;
+        }
+        
+        
+        
+        #NewSmAns
+        {
+            padding:              4px;
+            height:               17px;
+            max-width:          300px;
+            text-align:          center;
+            font-family:         'Roboto Mono', monospace;
+            margin:             auto;
+            font-size: 13px;
+        }
+        
+        #NewWireAns
+        {
+            padding:              4px;
+            height:               17px;
+            max-width:          300px;
+            text-align:          center;
+            font-family:         'Roboto Mono', monospace;
+            margin:             auto;
+            font-size: 13px;
+        }
+        
+        #NewBroadAns
+        {
+            padding:              4px;
+            height:               17px;
+            max-width:          300px;
+            text-align:          center;
+            font-family:         'Roboto Mono', monospace;
+            margin:             auto;
+            font-size: 13px;
+        }
+        
+        #HostRangeWA_Ans
+        {
+            padding:              4px;
+            height:               17px;
+            max-width:          300px;
+            text-align:          center;
+            font-family:         'Roboto Mono', monospace;
+            margin:             auto;
+            font-size: 13px;
+        }
+        
+        #HostRangeBA_Ans
+        {
+            padding:              4px;
+            height:               17px;
+            max-width:          300px;
+            text-align:          center;
+            font-family:         'Roboto Mono', monospace;
+            margin:             auto;
+            font-size: 13px;
+        }
+        
+        
+        
+        
+        
+        #SubNumWireQuest
+        {
+        border-radius:        25px;
+        border: 3px solid     #4a6366;
+        padding:              5px;
+        height:               10px;
+        text-align:          center;
+        font-family:         'Roboto Mono', monospace;
+        }
+        
+        
+        #SubNumWireAns
+        {
+            padding:              4px;
+            height:               17px;
+            max-width:          300px;
+            text-align:          center;
+            font-family:         'Roboto Mono', monospace;
+            margin:             auto;
+            font-size: 13px;
+        }
+
+        
+        html
+        {
+            text-align:          center;
+            background-color:    #7a9b9f;
+            font-family: 		'Roboto Mono', monospace;
+        }
+        
+        h1
+        {
+          border-radius:        25px;
+          background-color: #678a8f;
+          padding:              14px;
+          border: 5px solid     #4a6366;
+        }
+        
+        .DefaultOnes
+            {
+                background-color: #678a8f;
+				font-family: 		'Roboto Mono', monospace;
+            }
+        
+        .BitOnes
+            {
+                background-color: #678a8f;
+				font-family: 		'Roboto Mono', monospace;
+            }
+        
+        .SubNumOnes
+            {
+                background-color: #678a8f;
+				font-family: 		'Roboto Mono', monospace;
+            }
+    
+			table
+            {
+                font-family: 		'Roboto Mono', monospace;
+                border-collapse: collapse;
+                width: 100%;
+                padding:     30px;
+			  
+			}
+
+			td, th
+            {
+                font-family:         'Roboto Mono', monospace;
+                border: 3px solid;
+                text-align: center;
+                padding: 4px;
+			}
+
+        </style>
+        
+        <script>
+        //alert("Space, the final frontier...");
+        //thanks grade 10 me...
+
+        var iptest = [4];
+        var Ip1;
+        var Ip2;
+        var Ip3;
+        var Ip4;
+        
+        var i;
+        var i2;
+        var Classtemp;
+        
+        var smtest = [4];
+        var Sm1;
+        var Sm2;
+        var Sm3;
+        var Sm4;
+        var DefaultSm;
+        
+        var NewSm1;
+        var NewSm2;
+        var NewSm3;
+        var NewSm4;
+        
+        var NewestSm;
+        
+        var Borrowtemp;
+        var BitLeftTemp;
+        var BitMultiple;
+        
+        var temptemp;
+        var temptemp1;
+        
+        
+        var SmTempNum;
+        var SmTempAdd;
+        var SmTempMulti;
+        var NewSmTest = [4];
+        
+        var totalWA;
+        var NewTotalWA;
+        var totalBA;
+        var NewTotalBA;
+        
+        var HostBA;
+        var HostWA;
+        
+        var SubNumTemp;
+        var NewSmTempMulti;
+        
+        var TotalScore;
+        
+        //var HOs
+        
+        function BeforeAnswer()
+        {
+            CorrectAnswerReset();
+            RandIp();
+            ClassId();
+            BitBorrow();
+            AssignSubMask();
+            WAnswer();
+            BAnswer();
+            NewSM();
+            NewWAnswer();
+            NewBAnswer();
+            SubnetNumber();
+            SubnetWire();
+            SubNumFinalChecker();
+            
+        }
+        
+        function AfterAnswer()
+        {
+            TotalScoreReset();
+            ClassIdFinal();
+            AssignSubMaskFinal();
+            WAnswerFinal();
+            BAnswerFinal();
+            NewSMFinal();
+            NewWAnswerFinal();
+            NewBAnswerFinal();
+            HostRangeFinal();
+			SubNumFinal();
+            TotalMark();
+        }
+        
+        function TotalScoreReset()
+        {
+            TotalScore = 0;
+        }
+        
+        
+        function ClassIdFinal()
+        {
+            if(document.getElementById('ClassTypeQuest').value == Classtemp)
+            {
+                document.getElementById('ClassTypeAns').innerHTML = "Correct!";
+                TotalScore++;
+                
+                document.getElementById('ClassTypeAns').style.backgroundColor = "#c8f5ae";
+                
+            }
+            
+            else
+            {
+                document.getElementById('ClassTypeAns').innerHTML = "Wrong! The Answer is: " + Classtemp ;
+                
+                document.getElementById('ClassTypeAns').style.backgroundColor = "#ffc2b3";
+            }
+        }
+        
+        
+        function AssignSubMaskFinal()
+        {
+            if(document.getElementById('DefaultSmQuest').value == DefaultSm)
+            {
+                TotalScore++;
+                document.getElementById('DefaultSmAns').innerHTML = "Correct!";
+                
+                document.getElementById('DefaultSmAns').style.backgroundColor = "#c8f5ae";
+            }
+            
+            else
+            {
+                document.getElementById('DefaultSmAns').innerHTML = "Wrong! The Answer is: " + DefaultSm;
+                
+                document.getElementById('DefaultSmAns').style.backgroundColor = "#ffc2b3";
+            }
+        }
+        
+        
+        function WAnswerFinal()
+        {
+            if (document.getElementById('WireQuest').value == totalWA)
+            {
+                TotalScore++;
+                document.getElementById('WireAns').innerHTML = "Correct!";
+                
+                document.getElementById('WireAns').style.backgroundColor = "#c8f5ae";
+            }
+            
+            else
+            {
+                document.getElementById('WireAns').innerHTML =
+                "Wrong! The Answer is: " + totalWA;
+                
+                document.getElementById('WireAns').style.backgroundColor = "#ffc2b3";
+            }
+        }
+        
+        
+        function BAnswerFinal()
+        {
+            if (document.getElementById('BroadQuest').value == totalBA)
+               {
+                   TotalScore++;
+                   document.getElementById('BroadAns').innerHTML = "Correct!";
+                   
+                   document.getElementById('BroadAns').style.backgroundColor = "#c8f5ae";
+               }
+               
+               else
+               {
+                   document.getElementById('BroadAns').innerHTML =
+                   "Wrong! The Answer is: " + totalBA;
+                   
+                   document.getElementById('BroadAns').style.backgroundColor = "#ffc2b3";
+               }
+        }
+        
+        
+        
+        function NewSMFinal()
+        {
+            if (document.getElementById('NewSmQuest').value == NewestSm)
+               {
+                   TotalScore++;
+                   document.getElementById('NewSmAns').innerHTML = "Correct!";
+                   
+                   document.getElementById('NewSmAns').style.backgroundColor = "#c8f5ae";
+               }
+               
+               else
+               {
+                   document.getElementById('NewSmAns').innerHTML =
+                   "Wrong! The Answer is: " + NewestSm;
+                   
+                   document.getElementById('NewSmAns').style.backgroundColor = "#ffc2b3";
+               }
+        }
+        
+        
+        function NewWAnswerFinal()
+        {
+            if (document.getElementById('NewWireQuest').value == NewTotalWA)
+            {
+                TotalScore++;
+                document.getElementById('NewWireAns').innerHTML = "Correct!";
+                
+                document.getElementById('NewWireAns').style.backgroundColor = "#c8f5ae";
+            }
+
+            else
+            {
+                document.getElementById('NewWireAns').innerHTML =
+                "Wrong! The Answer is: " + NewTotalWA;
+                
+                document.getElementById('NewWireAns').style.backgroundColor = "#ffc2b3";
+            }
+        }
+        
+        
+        function NewBAnswerFinal()
+        {
+            if (document.getElementById('NewBroadQuest').value == NewTotalBA)
+            {
+                TotalScore++;
+                document.getElementById('NewBroadAns').innerHTML = "Correct!";
+                
+                document.getElementById('NewBroadAns').style.backgroundColor = "#c8f5ae";
+            }
+            
+            else
+            {
+                document.getElementById('NewBroadAns').innerHTML =
+                "Wrong! The Answer is: " + NewTotalBA;
+                
+                document.getElementById('NewBroadAns').style.backgroundColor = "#ffc2b3";
+            }
+        }
+
+        
+        function HostRangeFinal()
+        {
+
+            if (HostWA == document.getElementById('HostRangeWA').value)
+            {
+                TotalScore++;
+               document.getElementById('HostRangeWA_Ans').innerHTML =
+               "Correct!";
+               
+               document.getElementById('HostRangeWA_Ans').style.backgroundColor = "#c8f5ae";
+            }
+               
+            else
+            {
+               document.getElementById('HostRangeWA_Ans').innerHTML =
+               "Wrong! The answer is: " + HostWA;
+               
+               document.getElementById('HostRangeWA_Ans').style.backgroundColor = "#ffc2b3";
+            }
+               
+               
+            if (HostBA == document.getElementById('HostRangeBA').value)
+            {
+                TotalScore++;
+               document.getElementById('HostRangeBA_Ans').innerHTML =
+               "Correct!";
+               
+               document.getElementById('HostRangeBA_Ans').style.backgroundColor = "#c8f5ae";
+            }
+                
+            else
+            {
+                document.getElementById('HostRangeBA_Ans').innerHTML =
+                "Wrong! The answer is: " + HostBA;
+                
+                document.getElementById('HostRangeBA_Ans').style.backgroundColor = "#ffc2b3";
+            }
+        }
+
+		function SubNumFinal()
+		{
+			if (document.getElementById('SubNumWireQuest').value == SubNumTemp)
+            {
+                TotalScore++;
+                document.getElementById('SubNumWireAns').innerHTML = "Correct!";
+                
+                document.getElementById('SubNumWireAns').style.backgroundColor = "#c8f5ae";
+            }
+            
+            else
+            {
+                document.getElementById('SubNumWireAns').innerHTML =
+                "Wrong! The Answer is: " + SubNumTemp;
+                
+                document.getElementById('SubNumWireAns').style.backgroundColor = "#ffc2b3";
+            }
+		}
+
+        function TotalMark()
+        {
+            document.getElementById('TotalMark').innerHTML =
+            TotalScore + "/10";
+            
+        }
+
+        
+        //BeforeAnswer
+        
+        
+        //Resets the question
+        function CorrectAnswerReset()
+        {
+            //Question
+            document.getElementById('ClassTypeQuest').value = "";
+            //ClassIdFinal()
+            document.getElementById('ClassTypeAns').innerHTML = "";
+            document.getElementById('ClassTypeAns').style.backgroundColor = "";
+            
+            //Question
+            document.getElementById('DefaultSmQuest').value = "";
+            //AssignSubMaskFinal();
+            document.getElementById('DefaultSmAns').innerHTML = "";
+            document.getElementById('DefaultSmAns').style.backgroundColor = "";
+            
+            //Question
+            document.getElementById('WireQuest').value = "";
+            //WAnswerFinal();
+            document.getElementById('WireAns').innerHTML = "";
+            document.getElementById('WireAns').style.backgroundColor = "";
+            
+            //Question
+            document.getElementById('BroadQuest').value = "";
+            //BAnswerFinal();
+            document.getElementById('BroadAns').innerHTML = "";
+            document.getElementById('BroadAns').style.backgroundColor = "";
+            
+            
+            
+            //Question
+            document.getElementById('NewSmQuest').value = "";
+            //NewSMFinal();
+            document.getElementById('NewSmAns').innerHTML = "";
+            
+            document.getElementById('NewSmAns').style.backgroundColor = "";
+            
+            //Question
+            document.getElementById('NewWireQuest').value = "";
+            //NewWAnswerFinal();
+            document.getElementById('NewWireAns').innerHTML = "";
+            
+            document.getElementById('NewWireAns').style.backgroundColor = "";
+            
+            //Question
+            document.getElementById('NewBroadQuest').value = "";
+            //NewBAnswerFinal();
+            document.getElementById('NewBroadAns').innerHTML = "";
+            document.getElementById('NewBroadAns').style.backgroundColor = "";
+            
+            //Question
+            document.getElementById('HostRangeWA').value = "";
+            //HostRangeFinal();
+            document.getElementById('HostRangeWA_Ans').innerHTML =
+            "";
+            document.getElementById('HostRangeWA_Ans').style.backgroundColor = "";
+            //Highest
+            //Question
+            document.getElementById('HostRangeBA').value = "";
+            //Highest
+            document.getElementById('HostRangeBA_Ans').innerHTML =
+            "";
+            document.getElementById('HostRangeBA_Ans').style.backgroundColor = "";
+            
+            
+            
+            //Question
+            document.getElementById('SubNumWireQuest').value = "";
+            //SubNumFinal();
+            document.getElementById('SubNumWireAns').innerHTML = "";
+            document.getElementById('SubNumWireAns').style.backgroundColor = "";
+
+            //TotalMark()
+            document.getElementById('TotalMark').innerHTML = "";
+            
+        }
+        
+        
+        function RandIp()
+        {
+            //cancelled 2 texts
+           ///*
+           Ip1 = Math.floor(Math.random() * 223) + 1;
+           
+           Ip2 = Math.floor(Math.random() * 225);
+           
+           Ip3 = Math.floor(Math.random() * 225);
+           
+           if ((Ip1 == 255) && (Ip2 == 255) && (Ip3 == 255))
+            {
+                Ip4 = Math.floor(Math.random() * 224);
+            }
+
+           else
+           {
+                Ip4 = Math.floor(Math.random() * 225);
+           }
+           // */
+           
+           
+           //Used to debug IP address...very useful
+           /*
+           Ip1 = 130;
+           Ip2 = 0;
+           Ip3 = 0;
+           Ip4 = 0;
+            */
+
+           Ip1 = parseFloat(Ip1);
+           Ip2 = parseFloat(Ip2);
+           Ip3 = parseFloat(Ip3);
+           Ip4 = parseFloat(Ip4);
+           
+           document.getElementById('Ip').innerHTML = Ip1 + "." + Ip2 + "." +
+           Ip3 + "." + Ip4;
+        }
+        
+        function ClassId()
+        {
+            
+            if(Ip1 >= 0 && Ip1 <= 127)
+            {
+               Classtemp = 'A';
+            }
+        
+            else if(Ip1 >= 128 && Ip1 <= 191)
+            {
+                Classtemp = 'B';
+            }
+            
+            else
+            {
+                Classtemp = 'C';
+            }
+            
+            //console.log(ClassTemp);
+        }
+        
+        function BitBorrow()
+        {
+            //ClassId();
+            
+            
+            ///*
+            if (Classtemp == 'A')
+            {
+                Borrowtemp = Math.floor(Math.random() * 22) + 1;
+                document.getElementById('BitAmount').innerHTML =
+                "Assume that " + Borrowtemp + " bit(s) were borrowed to subnet the network.";
+            }
+            
+            else if (Classtemp == 'B')
+            {
+                Borrowtemp = Math.floor(Math.random() * 14) + 1;
+                document.getElementById('BitAmount').innerHTML =
+                "Assume that " + Borrowtemp + " bit(s) were borrowed to subnet the network.";
+            }
+            
+            else if (Classtemp == 'C')
+            {
+                Borrowtemp = Math.floor(Math.random() * 6) + 1;
+                document.getElementById('BitAmount').innerHTML =
+                "Assume that " + Borrowtemp + " bit(s) were borrowed to subnet the network.";
+            }
+             //*/
+            //Used to debug Bits borrowed...
+            /*
+            Borrowtemp = 11;
+            document.getElementById('BitAmount').value = Borrowtemp;
+             */
+			 
+			 //does not generate a bit borrow if class C, what the frick
+			//console.log(Borrowtemp);
+        }
+        
+        function AssignSubMask()
+        {
+            
+            if (Classtemp == 'A')
+            {
+                Sm1 = 255;
+                Sm2 = 0;
+                Sm3 = 0;
+                Sm4 = 0;
+                
+            }
+            else if (Classtemp == 'B')
+            {
+                Sm1 = 255;
+                Sm2 = 255;
+                Sm3 = 0;
+                Sm4 = 0;
+            }
+            
+            else if (Classtemp == 'C')
+            {
+                Sm1 = 255;
+                Sm2 = 255;
+                Sm3 = 255;
+                Sm4 = 0;
+            }
+            
+            DefaultSm = Sm1 + "." + Sm2 + "." + Sm3 + "." + Sm4;
+            
+            //console.log(Sm1 + "." + Sm2 + "." + Sm3 + "." + Sm4)
+
+        }
+        
+        function NewSM()
+        {
+            smtest[1] = Sm1;
+            smtest[2] = Sm2;
+            smtest[3] = Sm3;
+            smtest[4] = Sm4;
+            
+            if (Classtemp == 'A')
+            {
+                
+                SmTempNum = Borrowtemp % 8;
+                //console.log(SmTempNum);
+                SmTempMulti = (Borrowtemp - SmTempNum);
+                //console.log(SmTempMulti);
+                
+                if (SmTempMulti == 8)
+                {
+                    smtest[2] = 255;
+                }
+                
+                else if (SmTempMulti == 16)
+                {
+                   smtest[2] = 255;
+                   smtest[3] = 255;
+                }
+                
+                if ((SmTempNum > 0) && (SmTempMulti == 8))
+                {
+                    smtest[3] = 255;
+                    smtest[3] = smtest[3] >> (8 - SmTempNum);
+                    smtest[3] = smtest[3] << (8 - SmTempNum);
+                }
+                
+                else if ((SmTempNum > 0) && (SmTempMulti == 16))
+                {
+                    smtest[4] = 255;
+                    smtest[4] = smtest[4] >> (8 - SmTempNum);
+                    smtest[4] = smtest[4] << (8 - SmTempNum);
+                }
+                
+                else
+                {
+                    smtest[2] = 255;
+                    smtest[2] = smtest[2] >> (8 - SmTempNum);
+                    smtest[2] = smtest[2] << (8 - SmTempNum);
+                }
+                
+            }
+            
+            else if (Classtemp == 'B')
+            {
+
+                SmTempNum = Borrowtemp % 8;
+                //console.log(SmTempNum);
+                SmTempMulti = (Borrowtemp - SmTempNum);
+                //console.log(SmTempMulti);
+                
+                if (SmTempMulti == 8)
+                {
+                    smtest[3] = 255;
+                }
+                
+                if ((SmTempNum > 0) && (SmTempMulti == 8))
+                {
+                    smtest[4] = 255;
+                    smtest[4] = smtest[4] >> (8 - SmTempNum);
+                    smtest[4] = smtest[4] << (8 - SmTempNum);
+                }
+                else
+                {
+                    smtest[3] = 255;
+                    smtest[3] = smtest[3] >> (8 - SmTempNum);
+                    smtest[3] = smtest[3] << (8 - SmTempNum);
+                }
+            }
+            
+            //Only Outlier since it only occupies 1 bracket
+            else
+            {
+                //SmTempMulti = (Borrowtemp - SmTempNum);
+                smtest[4] = 255;
+                smtest[4] = smtest[4] >> (8 - Borrowtemp);
+                smtest[4] = smtest[4] << (8 - Borrowtemp);
+            }
+            
+            //console.log((smtest[1]) + "."
+            //+ (smtest[2]) + "." + (smtest[3]) + "." + (smtest[4]));
+            
+            NewestSm = (smtest[1]) + "." + (smtest[2]) + "." + (smtest[3]) + "." + (smtest[4]);
+            
+            NewSm1 = smtest[1];
+            NewSm2 = smtest[2];
+            NewSm3 = smtest[3];
+            NewSm4 = smtest[4];
+        }
+        
+        
+        function WAnswer()
+        {
+            totalWA = (Ip1 & Sm1) + "."
+            + (Ip2 & Sm2) + "." + (Ip3 & Sm3) + "." + (Ip4 & Sm4);
+        }
+        
+        function NewWAnswer()
+        {
+                NewTotalWA = (Ip1 & NewSm1) + "."
+                + (Ip2 & NewSm2) + "." + (Ip3 & NewSm3) + "." + (Ip4 & NewSm4);
+                
+                HostWA = (Ip1 & NewSm1) + "."
+                + (Ip2 & NewSm2) + "." + (Ip3 & NewSm3) + "." + ((Ip4 & NewSm4) + 1);
+             
+        }
+        
+        
+        function BAnswer()
+        {
+            smtest[1] = Sm1;
+            smtest[2] = Sm2;
+            smtest[3] = Sm3;
+            smtest[4] = Sm4;
+            
+            for (i = 1; i <=4; i++)
+            {
+                smtest[i] = ~ smtest[i];
+                smtest[i] = smtest[i] & 255;
+            }
+
+            totalBA = (Ip1 | smtest[1]) + "."
+            + (Ip2 | smtest[2]) + "." + (Ip3 | smtest[3]) + "." + (Ip4 | smtest[4]);
+
+        }
+        
+        function NewBAnswer()
+        {
+            
+            smtest[1] = NewSm1;
+            smtest[2] = NewSm2;
+            smtest[3] = NewSm3;
+            smtest[4] = NewSm4;
+            
+            for (i = 1; i <=4; i++)
+            {
+                smtest[i] = ~ smtest[i];
+                smtest[i] = smtest[i] & 255;
+            }
+
+            NewTotalBA = (Ip1 | smtest[1]) + "."
+            + (Ip2 | smtest[2]) + "." + (Ip3 | smtest[3]) + "." + (Ip4 | smtest[4]);
+            
+            HostBA = (Ip1 | smtest[1]) + "."
+            + (Ip2 | smtest[2]) + "." + (Ip3 | smtest[3]) + "." + ((Ip4 | smtest[4]) - 1);
+
+        }
+        
+        function SubnetNumber()
+        {
+            SubNumTemp = Math.floor(Math.random() * Borrowtemp);
+            
+            //Used to debug Subnet Number!
+            /*
+            SubNumTemp = 9;
+            document.getElementById('SubNum').value = SubNumTemp;
+            */
+        }
+        
+        function SubnetWire()
+        {
+            temptemp = Borrowtemp % 8;
+
+            if (Classtemp == 'A')
+            {
+                Ip2 = 0;
+                Ip3 = 0;
+                Ip4 = 0;
+                
+                 if(Borrowtemp <= 8)
+                 {
+                  Ip2 = SubNumTemp;
+                  //console.log(SubNumTemp);
+                  Ip2 = Ip2 << (8-Borrowtemp);
+                  //console.log(Ip2);
+                 }
+
+                 else if ((Borrowtemp >=9) && (Borrowtemp <=12))
+                 {
+                //console.log('yes');
+                 Ip2 = SubNumTemp;
+                 Ip3 = SubNumTemp;
+                 Ip2 = Ip2 >> temptemp;
+                 Ip3 = Ip3 << (16-Borrowtemp);
+                 Ip3 = Ip3 & 255;
+                 //console.log(Ip2);
+                 //console.log(Ip3);
+
+                 }
+                 
+                 else if(Borrowtemp <= 16)
+                 {
+                  Ip3 = SubNumTemp;
+                  //console.log(SubNumTemp);
+                  Ip3 = Ip3 << (16-Borrowtemp);
+                  //console.log(Ip3);
+                  
+                 }
+                 
+                 else if ((Borrowtemp >=17) && (Borrowtemp <=20))
+                 {
+                 Ip3 = SubNumTemp;
+                 Ip4 = SubNumTemp;
+                 
+                 Ip3 = Ip3 >> temptemp;
+                 Ip4 = Ip4 << (24-Borrowtemp);
+                 Ip4 = Ip4 & 255;
+                 //console.log(Ip3);
+                 //console.log(Ip4);
+                 }
+                 
+                 else if(Borrowtemp <= 24)
+                 {
+                  Ip4 = SubNumTemp;
+                  Ip4 = Ip4 << (24-Borrowtemp);
+                 }
+            }
+            
+            //Class B boiz
+            else if (Classtemp == 'B')
+            {
+                Ip3 = 0;
+                Ip4 = 0;
+                
+                 if(Borrowtemp <= 8)
+                 {
+                  Ip3 = SubNumTemp;
+                  //console.log(SubNumTemp);
+                  Ip3 = Ip3 << (8-Borrowtemp);
+                  //console.log(Ip3);
+                  
+                 }
+                 
+                 else if ((Borrowtemp >=9) && (Borrowtemp <=12))
+                 {
+                 Ip3 = SubNumTemp;
+                 Ip4 = SubNumTemp;
+                 
+                 Ip3 = Ip3 >> temptemp;
+                 Ip4 = Ip4 << (16-Borrowtemp);
+                 Ip4 = Ip4 & 255;
+                 //console.log(Ip3);
+                 //console.log(Ip4);
+                 }
+                 
+                 else if(Borrowtemp <= 16)
+                 {
+                  Ip4 = SubNumTemp;
+                  Ip4 = Ip4 << (24-Borrowtemp);
+                 }
+            }
+            
+            //C's else if statement
+            else
+            {
+              Ip4 = 0;
+              
+              Ip4 = SubNumTemp;
+              Ip4 = Ip4 << (8-Borrowtemp);
+              //console.log(Ip4);
+            }
+            
+            SubNumWire = Ip1 + "." + Ip2 + "." + Ip3 + "." + Ip4;
+
+        }
+        
+        
+        
+        function SubNumFinalChecker()
+        {
+            if (SubNumWire == totalWA)
+            {
+                if(SubNumTemp == Borrowtemp)
+                {
+                    SubNumTemp = SubNumTemp - 1;
+                    SubnetWire();
+                }
+                
+                else
+                {
+                    SubNumTemp = SubNumTemp + 1;
+                    SubnetWire();
+                }
+            }
+            
+            else if (SubNumWire == NewTotalWA)
+            {
+                if(SubNumTemp == Borrowtemp)
+                {
+                    SubNumTemp = SubNumTemp - 1;
+                    SubnetWire();
+                }
+                
+                else
+                {
+                    SubNumTemp = SubNumTemp + 1;
+                    SubnetWire();
+                }
+            }
+            
+            document.getElementById('SubNumIPWire').innerHTML = SubNumWire;
+            //console.log(SubNumWire);
+            
+        }
+        
+        </script>
+        
+    <body>
+        <p>
+        <h1>Networking Subnet Practice!</h1>
+        </p>
+        
+        <p>
+        <button class="button" onclick='BeforeAnswer();'>
+        Generate New Question</button>
+        
+        <br><br><br>
+        
+        <button class="button" onclick='AfterAnswer();'>
+        Check your answers</button>
+        
+        <br><br>
+        <div id = 'TotalMark'> </div>
+        
+        </p>
+        
+        <br>
+        <p>
+        Random IP Generated:
+        <br>
+       <div id = 'Ip'> </div>
+       
+        </p>
+
+        <br><br>
+
+        <div class = "DefaultOnes">
+            <table>
+                <tr>
+                    <th>Default Questions</th>
+                    <th>Answer</th>
+                    <th>Correct Answer</th>
+                </tr>
+                
+                <tr>
+                    <td>Which Class Type is the IP address?</td>
+                    
+                    <td>
+                        <input type='text' placeholder='Your answer' id='ClassTypeQuest' />
+                    </td>
+                    
+                    <td>
+                        
+                        <div id = 'ClassTypeAns'> </div>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td>What's the IP's default Subnet Mask?</td>
+                    
+                    <td>
+                        <input type='text' placeholder='Your answer' id='DefaultSmQuest' />
+                    </td>
+                    
+                    <td>
+                        
+                        <div id = 'DefaultSmAns'> </div>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td>What's the IP's default Wire Address? </td>
+                    
+                    <td>
+                        <input type='text' placeholder='Your answer' id='WireQuest' />
+                    </td>
+                    
+                    <td>
+                        
+                        <div id = 'WireAns'> </div>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td>What's the default Broadcast Address?</td>
+                    
+                    <td>
+                        <input type='text' placeholder='Your answer' id='BroadQuest' />
+                    </td>
+                    
+                    <td>
+                        
+                        <div id = 'BroadAns'> </div>
+                    </td>
+                </tr>
+                
+                
+                
+            </table>
+        </div>
+        
+        <br><br>
+        <p>
+        <br>
+            <div id = 'BitAmount'> </div>
+        </p>
+        <br><br>
+        
+        
+        <div class = "BitOnes">
+            <table>
+                <tr>
+                    <th>Bits Borrowed Questions</th>
+                    <th>Answer</th>
+                    <th>Correct Answer</th>
+                </tr>
+                
+                <tr>
+                    <td>What's the Subnet Mask with the Bits Borrowed?</td>
+                    
+                    <td>
+                        <input type='text' placeholder='Your answer' id='NewSmQuest' />
+                    </td>
+                    
+                    <td>
+                        
+                        <div id = 'NewSmAns'> </div>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td>What's the Wire Address for this Subnet? </td>
+                    
+                    <td>
+                        <input type='text' placeholder='Your answer' id='NewWireQuest' />
+                    </td>
+                    
+                    <td>
+                        
+                        <div id = 'NewWireAns'> </div>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td>What's the Broadcast Address for this Subnet? </td>
+                    
+                    <td>
+                        <input type='text' placeholder='Your answer' id='NewBroadQuest' />
+                    </td>
+                    
+                    <td>
+                        
+                        <div id = 'NewBroadAns'> </div>
+                    </td>
+                </tr>
+                
+                <tr>
+                    
+                    <td>The host range with the bits borrowed: </td>
+                    
+                    
+                    <td>
+                        <input type='text' placeholder='Lowest' id='HostRangeWA' />
+                        <br>
+                        to
+                        <br>
+                        <input type='text' placeholder='Highest' id='HostRangeBA' />
+                    </td>
+                    
+                    
+                    <td>
+
+                        <div id = 'HostRangeWA_Ans'> </div>
+                        <div id = 'HostRangeBA_Ans'> </div>
+                    
+                    </td>
+                    
+                </tr>
+                
+            </table>
+            
+        </div>
+    
+        <br><br><br>
+        Assume subnet zero is allowed.
+        <br>
+        With IP Address:
+        <br>
+		
+        <div id = 'SubNumIPWire'> </div>
+
+        <br><br><br>
+        
+        <div class = "SubNumOnes">
+            <table>
+                <tr>
+                    <th>Subnet Number Question</th>
+                    <th>Answer</th>
+                    <th>Correct Answer</th>
+                </tr>
+                
+                <tr>
+                    <td>
+                        Which Subnet Number is this IP address in?
+                    </td>
+                    
+                    <td>
+                        <input type='text' placeholder='Subnet Number' id='SubNumWireQuest' />
+                    </td>
+                    
+                    <td>
+                        
+                        <div id = 'SubNumWireAns'> </div>
+                    </td>
+                </tr>
+                
+            </table>
+            
+        </div>
+
+    </body>
+</html>
+
